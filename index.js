@@ -11,3 +11,6 @@ async function fetchAdvice(){
     advice.textContent = data.slip.advice;
 }
 dice.addEventListener('click', fetchAdvice);
+window.onload = () => {
+    fetchAdvice();
+}
